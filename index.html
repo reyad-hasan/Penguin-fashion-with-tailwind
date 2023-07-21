@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>Penguin-fashion-with-Tailwind</title>
     <style>
@@ -20,18 +20,30 @@
         .font-roboto {
             font-family: 'Roboto Condensed', sans-serif;
         }
+
+        .font-montserrat {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <header class="bg-[#FFFBF0] py-28 px-4 sm:px-12 md:px-32">
+    <header class="bg-[#FFFBF0] px-4 sm:px-12 md:px-32">
         <!-- nav section start -->
-        <nav>
-
+        <nav class="flex flex-col lg:flex-row items-center justify-between py-10 space-y-3 ">
+            <h1 class="text-3xl font-montserrat font-bold"><a href="#"><span class=" text-[#A4BC46]">Penguin</span> Fashion</h1></a>
+            <div>
+                <ul class="flex font-medium gap-10 text-[#3C3C3C]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- nav section end -->
         <!-- banner section start -->
-        <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row justify-between items-center py-40">
             <div class="space-y-3">
                 <h1 class="text-7xl font-medium uppercase font-bebas"><span class="text-[#FABE4C]">Be the
                         Penguins</span><br> of
